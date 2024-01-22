@@ -30,22 +30,22 @@ $singlecustomer = $customer->single_customer($customerid);
       </div>
       <div class="row">
     <div class="col-md-6 pull-left">
-      <div class="col-md-2 col-lg-2 col-sm-2" style="float:left">
+      <div class="col-md-2 odt col-lg-2 col-sm-2" style="float:left">
         Name:
       </div>
-      <div class="col-md-8 col-lg-10 col-sm-3" style="float:left">
+      <div class="col-md-8 col-lg-10 odt col-sm-3" style="float:left">
         <?php echo $singlecustomer->FNAME .' '.$singlecustomer->LNAME; ?>
       </div>
-       <div class="col-md-2 col-lg-2 col-sm-2" style="float:left">
+       <div class="col-md-2 odt col-lg-2 col-sm-2" style="float:left">
         Address:
       </div>
-      <div class="col-md-8 col-lg-10 col-sm-3" style="float:left">
+      <div class="col-md-8 odt col-lg-10 col-sm-3" style="float:left">
         <?php echo $singlecustomer->CUSHOMENUM . ' ' . $singlecustomer->STREETADD . ' ' .$singlecustomer->BRGYADD . ' ' . $singlecustomer->CITYADD . ' ' .$singlecustomer->PROVINCE . ' ' .$singlecustomer->COUNTRY; ?>
       </div>
     </div>
 
     <div class="col-md-6 pull-right">
-    <div class="col-md-10 col-lg-12 col-sm-8">
+    <div class="col-md-10 odt col-lg-12 col-sm-8">
     <input type="hidden" value="<?php echo $res->AUTO; ?>" id="ORDEREDNUM" name="ORDEREDNUM">
       Order Number :<?php echo $res->AUTO; ?>
     </div>
@@ -101,9 +101,9 @@ $singlecustomer = $customer->single_customer($customerid);
               </table>  
                 <div class="  pull-right">
                   <p align="right">
-                  <div > Total Price :   &#8369 <span id="sum">0.00</span></div>
-                   <div > Delivery Fee : &#8369 <span id="fee">0.00</span></div>
-                   <div> Overall Price : &#8369 <span id="overall"><?php echo $tot ;?></span></div>
+                  <div class="odt" style="margin-top:50px;"> Total Price :   &#8369 <span id="sum">0.00</span></div>
+                   <div class="odt"> Delivery Fee : &#8369 <span id="fee">0.00</span></div>
+                   <div class="odt"> Overall Price : &#8369 <span id="overall"><?php echo $tot ;?></span></div>
                    <input type="hidden" name="alltot" id="alltot" value="<?php echo $tot ;?>"/>
                   </p>  
                 </div>
@@ -118,48 +118,19 @@ $singlecustomer = $customer->single_customer($customerid);
         <h3>What would you like to do next?</h3>
         <p>Choose if you have a discount code or reward points you want to use or would like to estimate your delivery cost.</p>
       </div>
-      <div class="row">
+      <div class="row" style="margin:0px;">
          <div class="row">
                    <div class="col-md-7">
               <div class="form-group">
-                  <label> Payment Method : </label> 
-                  <div class="radio" >
+                  <label class="odt"> Payment Method : </label> 
+                  <div class="radio odt" >
                       <label >
-                          <input type="radio"  class="paymethod" name="paymethod" id="deliveryfee" value="Cash on Delivery" checked="true" data-toggle="collapse"  data-parent="#accordion" data-target="#collapseOne" >Cash on Delivery 
+                          <input type="radio"  class="paymethod odt" name="paymethod" id="deliveryfee" value="Cash on Delivery" checked="true" data-toggle="collapse"  data-parent="#accordion" data-target="#collapseOne" >Cash on Delivery 
                         
                       </label>
                   </div> 
               </div> 
-                        <div class="panel"> 
-                                <div class="panel-body">
-                                    <div class="form-group ">
-                                      <label>Address where to deliver</label>
-
-                                    
-                                        <div class="col-md-12">
-                                          <label class="col-md-4 control-label" for=
-                                          "PLACE">Place(Brgy/City):</label>
-
-                                          <div class="col-md-8">
-                                           <select class="form-control paymethod" name="PLACE" id="PLACE" onchange="validatedate()"> 
-                                           <option value="0" >Select</option>
-                                              <?php 
-                                            $query = "SELECT * FROM `tblsetting` ";
-                                            $mydb->setQuery($query);
-                                            $cur = $mydb->loadResultList();
-
-                                            foreach ($cur as $result) {  
-                                              echo '<option value='.$result->DELPRICE.'>'.$result->BRGY.' '.$result->PLACE.' </option>';
-                                            }
-                                            ?>
-                                          </select>
-                                          </div>
-                                        </div>  
-                                      
-                                    </div>
-    
-                                </div>
-                            </div> 
+                        
       
                         <input type="hidden"  placeholder="HH-MM-AM/PM"  id="CLAIMEDDATE" name="CLAIMEDDATE" value="<?php echo date('y-m-d h:i:s') ?>"  class="form-control"/>
 
@@ -171,10 +142,10 @@ $singlecustomer = $customer->single_customer($customerid);
 <br/>
               <div class="row">
                 <div class="col-md-6">
-                    <a href="index.php?q=cart" class="btn btn-default pull-left"><span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<strong>View Cart</strong></a>
+                    <a href="index.php?q=cart" class="btn btn-default pull-left hbtn1">&nbsp;<strong>View Cart</strong></a>
                    </div>
                   <div class="col-md-6">
-                      <button type="submit" class="btn btn-pup  pull-right " name="btn" id="btn" onclick="return validatedate();"   /> Submit Order <span class="glyphicon glyphicon-chevron-right"></span></button> 
+                      <button type="submit" class="hbtn1 btn-pup  pull-right " name="btn" id="btn" onclick="return validatedate();"   /> Submit Order </button> 
                 </div>  
               </div>
              

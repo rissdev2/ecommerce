@@ -10,9 +10,9 @@
               <!-- Nav tabs -->
 
               <ul class="nav nav-pills">
-                  <li class="active"><a class="btn btn-default check_out" href="#home" data-toggle="tab">Login</a>
+                  <li class="active"><a class="hbtn1 check_out" href="#home" data-toggle="tab">Login</a>
                   </li>
-                  <li><a class="btn btn-default check_out" href="#profile" data-toggle="tab">Sign Up</a>
+                  <li><a class="hbtn1  check_out" href="#profile" data-toggle="tab">Sign Up</a>
                   </li>
                   
               </ul>
@@ -22,7 +22,7 @@
                   <div class="tab-pane fade in active" id="home">
                       <!-- <h4>Login Tab</h4>  -->
                        <div class="panel panel-pup">
-                        <div class="panel-heading">
+                        <div class="panel-heading odt">
                             Login Details
                         </div>
                         <div class="panel-body">
@@ -31,7 +31,7 @@
                               <input class="proid" type="hidden" name="proid" id="proid" value="">
                                 <div class="form-group">
                                   <div class="col-md-10">
-                                    <label class="col-md-4 control-label" for=
+                                    <label class="col-md-4 odt control-label" for=
                                     "U_USERNAME">Username:</label>
                                     
                                     <div class="col-md-8">
@@ -43,7 +43,7 @@
 
                                 <div class="form-group">
                                   <div class="col-md-10">
-                                    <label class="col-md-4 control-label" for=
+                                    <label class="col-md-4 odt control-label" for=
                                     "U_PASS">Password:</label>
                                     
                                     <div class="col-md-8">
@@ -58,9 +58,9 @@
                                     <label class="col-md-4 control-label" for=
                                     "FIRSTNAME"> </label>
                                     
-                                    <div class="col-md-8">
-                                    <button type="submit" id="modalLogin" name="modalLogin" class="btn btn-pup"><span class="glyphicon glyphicon-log-in "></span>   Login</button> 
-                                     <button class="btn btn-default" data-dismiss="modal" type="button">Close</button> 
+                                    <div class="col-md-10 pull-right">
+                                    <button type="submit" id="modalLogin" name="modalLogin" class="hbtn1 btn-pup"><span class="glyphicon glyphicon-log-in "></span>   Login</button> 
+                                     <button class="hbtn1 btn-default" data-dismiss="modal" type="button">Close</button> 
                                     </div>
                                   </div>
                                 </div>
@@ -69,9 +69,9 @@
                             </form>
 
                        </div>
-                        <div class="panel-footer">
+                        <!-- <div class="panel-footer">
                              <p align="left">&copy; <a href="https://bit.ly/2LPn9Wu">Janobe Source Code</a></p>
-                        </div>
+                        </div> -->
                     </div> 
                   </div>
                   <!-- end login panel -->
@@ -82,14 +82,14 @@
 
                            <form  class="form-horizontal span6" action="customer/controller.php?action=add" onsubmit="return personalInfo();" name="personal" method="POST" enctype="multipart/form-data">
                                 <div class="panel panel-pup">
-                                    <div class="panel-heading">
+                                    <div class="panel-heading odt">
                                        Customer Details
                                     </div>
                                      <div class="panel-body">
                                       <input class="proid" type="hidden" name="proid" id="proid" value="">
                                       <div class="form-group">
                                         <div class="col-md-10">
-                                          <label class="col-md-4 control-label" for=
+                                          <label class="col-md-4 odt control-label" for=
                                           "FNAME">First Name:</label>
                                           <!-- <input  id="CUSTOMERID" name="CUSTOMERID"  type="HIDDEN" value="<?php echo $res->AUTO; ?>">  -->
                                           <div class="col-md-8">
@@ -101,7 +101,7 @@
 
                                       <div class="form-group">
                                         <div class="col-md-10">
-                                          <label class="col-md-4 control-label" for=
+                                          <label class="col-md-4 odt control-label" for=
                                           "LNAME">Last Name:</label>
 
                                           <div class="col-md-8">
@@ -113,7 +113,7 @@
 
                                        <div class="form-group">
                                         <div class="col-md-10">
-                                          <label class="col-md-4 control-label" for=
+                                          <label class="col-md-4 odt control-label" for=
                                           "GENDER">Gender:</label>
 
                                           <div class="col-md-8">
@@ -127,11 +127,11 @@
 
                                        <div class="form-group">
                                             <div class="col-md-10">
-                                              <label class="col-md-4 control-label" for=
+                                              <label class="col-md-4 odt control-label" for=
                                               "CITYADD">Municipality/City:</label>
 
                                               <div class="col-md-8">
-                                                 <input class="form-control input-sm" id="CITYADD" name="CITYADD" placeholder=
+                                                 <input class="form-control  input-sm" id="CITYADD" name="CITYADD" placeholder=
                                                     "Municipality/City Address" type="text" value="">
                                               </div>
                                             </div>
@@ -140,7 +140,7 @@
                                   
                                       <div class="form-group">
                                         <div class="col-md-10">
-                                          <label class="col-md-4 control-label" for=
+                                          <label class="col-md-4 odt control-label" for=
                                           "CUSUNAME">Username:</label>
 
                                           <div class="col-md-8">
@@ -152,7 +152,7 @@
                                       
                                        <div class="form-group">
                                         <div class="col-md-10">
-                                          <label class="col-md-4 control-label" for=
+                                          <label class="col-md-4 odt control-label" for=
                                           "CUSPASS">Password:</label>
 
                                           <div class="col-md-8">
@@ -167,7 +167,7 @@
                                           <label class="col-md-4 control-label" for=
                                           "PASS"></label>
 
-                                          <div class="col-md-8">
+                                          <div class="col-md-8 odt">
                                           <p>Note</p>
                                             Password must be atleast 8 to 15 characters. Only letter, numeric digits, underscore and first character must be a letter.
                                          </div> 
@@ -176,7 +176,7 @@
  
                                       <div class="form-group">
                                         <div class="col-md-10">
-                                          <label class="col-md-4 control-label" for=
+                                          <label class="col-md-4 odt control-label" for=
                                           "PHONE">Contact Number:</label>
 
                                           <div class="col-md-8">
@@ -192,7 +192,7 @@
                                         <div class="col-md-10">
                                            <label class="col-md-4" align = "right"for=
                                           "image"></label>
-                                          <div class="col-md-8">
+                                          <div class="col-md-8 odt">
                                         <p>  I <input type="checkbox" id="conditionterms" name="conditionterms" value="checkbox" />
                                            <small>Agree with the <a class="toggle-modal"  onclick=" OpenPopupCenter('terms.php','Terms And Codition','600','600')"  ><b>TERMS AND CONDITION</b></a> of Janobe Source Code.</small>
                                            
@@ -204,9 +204,9 @@
                                         <div class="col-md-10">
                                            <label class="col-md-4" align = "right"for=
                                           "image"></label>
-                                          <div class="col-md-8">
-                                            <input type="submit"  name="submit"  value="Sign Up"  class="submit btn btn-pup"  />
-                                             <button class="btn btn-default" data-dismiss="modal" type=
+                                          <div class="col-md-10 pull-right">
+                                            <input type="submit"  name="submit"  value="Sign Up"  class="submit hbtn1 btn-pup"  />
+                                             <button class="hbtn1 btn-default" data-dismiss="modal" type=
                                                 "button">Close</button> 
                                           </div>
                                         </div>
@@ -215,9 +215,9 @@
                                         
 
                                      </div>
-                                    <div class="panel-footer">
+                                    <!-- <div class="panel-footer">
                                         <p align="left">&copy; <a href="https://bit.ly/2LPn9Wu">Janobe Source Code</a></p>
-                                    </div> 
+                                    </div>  -->
                             </div> 
                             <!-- end panel sign up -->
                         </form>  

@@ -23,22 +23,22 @@
         </ol>
       </div>
         <div class="row">
-    <div class="col-sm-3">
-        <div class="panel">
-            <div class="panel-body">
+    <div class="col-sm-3 prfl-sec">
+        <div class="panel prfl-sec ">
+            <div class="panel-body prfl-sec ">
                 <a data-target="#myModal" data-toggle="modal" href=
                 ""><img class="img-hover" src="<?php echo web_root. "customer/".$res->CUSPHOTO; ?>"
                 style="width:100%; height:100%;text-align:center" title=
                 "profile image"></a>
             </div>
-            <ul class="list-group">
+            <ul class="list-group ">
             <!-- <li class="list-group-item text-muted">Profile</li> -->
-                <li class="list-group-item text-right"><span class=
+                <li class="list-group-item prfl-sec1 odt text-right"><span class=
                 "pull-left"><strong>Real name</strong></span>
                 <?php echo $res->FNAME .' '.$res->LNAME; ?></li>
-                <li class="list-group-item text-right"> 
+                <li class="list-group-item prfl-sec1 text-right"> 
                 <div class="panel-group" id="accordion">   
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"  >Change Password</a>
+                  <a data-toggle="collapse" class="odt" data-parent="#accordion" href="#collapseTwo"  >Change Password</a>
                   <div id="collapseTwo" class="panel-collapse collapse">
                     <div class="panel-body">
                         <form action="<?php echo web_root; ?>customer/controller.php?action=changepassword" method="POST"> 
@@ -53,9 +53,9 @@
         </div>
     </div><!--/col-3-->
     <div class="col-sm-9">
-        <div class="panel">
-            <div class="panel-body">
-                <ul class="nav nav-tabs" id="myTab">
+        <div class="panel prfl-sec">
+            <div class="panel-body prfl-sec">
+                <ul class="nav nav-tabs otd" id="myTab">
                     <li class="active">
                         <a data-toggle="tab" href="#home">List of Orders</a>
                     </li> 
@@ -78,7 +78,7 @@
                             "customer/controller.php?action=delete" method=
                             "post">
                                 <table cellspacing="0" class=
-                                "table table-striped table-bordered table-hover"
+                                "table  table-bordered "
                                 id="example" style="font-size:12px">
                                     <thead>
                                         <tr>

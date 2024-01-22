@@ -13,6 +13,8 @@
     <link href="css/animate.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet">
+  
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -49,8 +51,8 @@ if (isset($_SESSION['gcCart'])){
           <div class="col-sm-6">
             <div class="contactinfo">
               <ul class="nav nav-pills">
-                <li><a href="#"><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>
-                <li><a href="#"><i class="fa fa-envelope"></i> jannopalacios@gmail.com</a></li>
+                <!-- <li><a href="#"><i class="fa fa-phone"></i> +2 95 01 88 821</a></li> -->
+                <li><a href="#"><i class="fa fa-envelope"></i> sleekgadgetgalaxy@gmail.com</a></li>
               </ul>
             </div>
           </div>
@@ -58,10 +60,8 @@ if (isset($_SESSION['gcCart'])){
             <div class="social-icons pull-right">
               <ul class="nav navbar-nav">
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                
               </ul>
             </div>
           </div>
@@ -152,107 +152,23 @@ if (isset($_SESSION['gcCart'])){
 
 
     <footer id="footer"><!--Footer-->
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-2">
-            <div class="companyinfo">
-              <h2><span>e</span>-shopper</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor</p>
-            </div>
-          </div>
-          <div class="col-sm-7">
-            <div class="col-sm-6">
-              <div class="video-gallery text-center">
-                <a href="#"> 
-                    <iframe class="iframe-img"  src="https://www.youtube.com/embed/d8N21Q_UN4w"   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-                </a> 
-              </div>
-            </div>
-            
-            <div class="col-sm-6">
-              <div class="video-gallery text-center">
-                <a href="#"> 
-                   <iframe  class="iframe-img"  src="https://www.youtube.com/embed/aMDC3Da4KIA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-                </a> 
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="address">
-              <img src="images/home/map.png" alt="" />
-              <p>505 S Atlantic Ave Virginia Beach, VA(Virginia)</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     
-    <div class="footer-widget">
-      <div class="container">
-        <p>You can modify this section using your own personal information</p>
-        <div class="row">
-          <div class="col-sm-3">
-            <div class="single-widget">
-              <h2>Service</h2>
-              <ul class="nav nav-pills nav-stacked">
-                <li><a href="#">Online Help</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Order Status</a></li>
-                <li><a href="#">Change Location</a></li>
-                <li><a href="#">FAQ’s</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="single-widget">
-              <h2>Quick Shop</h2>
-              <ul class="nav nav-pills nav-stacked">
-                 <?php 
-                      $mydb->setQuery("SELECT * FROM `tblcategory` LIMIT 6");
-                      $cur = $mydb->loadResultList();
-                     foreach ($cur as $result) {
-                      echo '<li><a href="index.php?q=product&category='.$result->CATEGORIES.'" >'.$result->CATEGORIES.'</a></li>';
-                      }
-                  ?>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="single-widget">
-              <h2>Policies</h2>
-              <ul class="nav nav-pills nav-stacked">
-                <li><a href="#">Terms of Use</a></li>
-                <li><a href="#">Privecy Policy</a></li>
-                <li><a href="https://youtu.be/9hcCHTwW3HA">HR Record System</a></li>
-                <li><a href="https://youtu.be/aMDC3Da4KIA">Point of Sales</a></li>
-                <li><a href="https://youtu.be/d8N21Q_UN4w">Resevation System</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="single-widget">
-              <h2>About Shopper</h2>
-              <ul class="nav nav-pills nav-stacked">
-                <li><a href="#">Company Information</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Store Location</a></li>
-                <li><a href="#">Affillate Program</a></li>
-                <li><a href="#">Copyright</a></li>
-              </ul>
-            </div>
-          </div>
-      
-          
-        </div>
-      </div>
-    </div>
+    
+   
     
     <div class="footer-bottom">
       <div class="container">
-        <div class="row">
-          <p class="pull-left">Modified by <span><a href="https://bit.ly/2LPn9Wu">Janobe Source Code</a></span></p>
-          <p class="pull-right">Designed by <span><a target="_blank" href="http://www.themeum.com">Themeum</a></span></p>
+        <div class="row fot-sec">
+          <div class="col-md-4">
+              <p>gadgetgalaxy © 2023</p>
+          </div>
+          <div class="col-md-4 justify-content-center">
+            <a href="" class="text-center"><img src="images/home/logo.png" alt=""></a>
+          </div>
+          <div class="col-md-4 text-right">
+            <a href="#header"><i class="fa fa-arrow-circle-up"></i> &nbsp; Back To Top</a>
+          </div>
+      
         </div>
       </div>
     </div>
@@ -434,6 +350,157 @@ function validatedate(){
 
        
   </script>     
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+	var testiomnialData = [
+    {
+        avatar: "https://theriss.net/kashan-manipulation/testimonials/b1.jpg",
+        name: "Ali Raza",
+        review: "I've bought some gadgets from gadget galaxy and I'm thrilled with my decision. Their quality and service have truly met my expectations."
+    },
+    {
+        avatar: "https://theriss.net/kashan-manipulation/testimonials/g1.jpg",
+        name: "Samira Khan",
+        review: "I purchased a gadget from gadgetgalaxy, and I'm really satisfied. They don't just offer fast delivery but also commendable quality."
+    },
+    {
+        avatar: "https://theriss.net/kashan-manipulation/testimonials/b2.jpg",
+        name: "Muhammad Ali",
+        review: "I was looking to buy two gadgets at once, but I was short on time. Thanks to gadget galaxy excellent service, I got my gadgets quickly. Thank you!"
+    },
+    {
+        avatar: "https://theriss.net/kashan-manipulation/testimonials/g2.jpg",
+        name: "Fatima Abbas",
+        review: "I needed a gaming console for my grandson, and gadget galaxy fulfilled my expectations. He's been enjoying his favorite games to the fullest."
+    },
+    {
+        avatar: "https://theriss.net/kashan-manipulation/testimonials/g3.jpg",
+        name: "Aisha Khalid",
+        review: "I subscribed to gadget galaxy newsletter for the first time, and I'm confident I made the right decision. Their informative content and discounts have proven valuable to me."
+    },
+    {
+        avatar: "https://theriss.net/kashan-manipulation/testimonials/b3.jpg",
+        name: "Waqar Ahmed",
+        review: "I bought a headphone from Gadget Galaxy, and I was just trying to make a purchase from here, but my expectations were exceeded. I'm deciding from countless options."
+    }, {
+        avatar: "https://theriss.net/kashan-manipulation/testimonials/b4.jpg",
+        name: " Ismail Raza",
+        review: "My purchasing experience has been successful when I used the specialized gadgets from Gadget galaxy. I can't say they'll change my whole life, but they certainly add more color to my daily life."
+    }]
+var slideHolder = document.querySelector("#slideHolder")
+for (let i of testiomnialData) slideHolder.innerHTML += `<div class="swiper-slide"> <div class="ImgHolder"><img src="${i.avatar}"></div><div class="ContentHolder"><h3>${i.name}</h3><p>${i.review}</p></div></div>`
+
+const swiper = new Swiper('#craouselContainer', {
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 2.3,
+    loop: true,
+    spaceBetween: 30,
+    effect: "coverflow",
+    coverflowEffect: {
+        rotate: 0,
+        depth: 800,
+        slideShadows: true,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    },
+    autoplay: { delay: 5000 }
+});
+window.onresize = queryResizer
+queryResizer()
+function queryResizer() {
+    if (window.innerWidth < 724) swiper.params.slidesPerView = 2
+    if (window.innerWidth > 501) swiper.params.slidesPerView = 2
+    if (window.innerWidth > 724) swiper.params.slidesPerView = 2.3
+    if (window.innerWidth < 501) swiper.params.slidesPerView = 1
+    swiper.update()
+}
+</script>
+
+
+
+
+<script>
+  class TypeWriter {
+  constructor(txtElement, words, wait = 3000) {
+    this.txtElement = txtElement;
+    this.words = words;
+    this.txt = "";
+    this.wordIndex = 0;
+    this.wait = parseInt(wait, 10);
+    this.type();
+    this.isDeleting = false;
+  }
+
+  type() {
+    // Current index of word
+    const current = this.wordIndex % this.words.length;
+    // Get full text of current word
+    const fullTxt = this.words[current];
+
+    // Check if deleting
+    if (this.isDeleting) {
+      // Remove char
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+      // Add char
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+
+    // Insert txt into element
+    this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+
+    // Initial Type Speed
+    let typeSpeed = 300;
+
+    if (this.isDeleting) {
+      typeSpeed /= 2;
+    }
+
+    // If word is complete
+    if (!this.isDeleting && this.txt === fullTxt) {
+      // Make pause at end
+      typeSpeed = this.wait;
+      // Set delete to true
+      this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === "") {
+      this.isDeleting = false;
+      // Move to next word
+      this.wordIndex++;
+      // Pause before start typing
+      typeSpeed = 500;
+    }
+
+    setTimeout(() => this.type(), typeSpeed);
+  }
+}
+
+// Init On DOM Load
+document.addEventListener("DOMContentLoaded", init);
+
+// Init App
+function init() {
+  const txtElement = document.querySelector(".txt-type");
+  const words = JSON.parse(txtElement.getAttribute("data-words"));
+  const wait = txtElement.getAttribute("data-wait");
+  // Init TypeWriter
+  new TypeWriter(txtElement, words, wait);
+}
+</script>
+
+
 
 </body>
 </html>

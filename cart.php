@@ -51,23 +51,7 @@ check_message();
                                   <td>  
                                     <img src="<?php echo web_root. 'admin/products/'.$result->IMAGES; ?>"  onload="  totalprice() " width="50px" height="50px"> 
                                   <br/> 
-                                        <?php    
-                                          
-                                              
-                                            if (isset($_SESSION['CUSID'])){  
-
-                                              echo ' <a href="'.web_root. 'customer/controller.php?action=addwish&proid='.$result->PROID.'" title="Add to wishlist">Add to wishlist</a>
-             ';
-                                           
-                                             }else{
-                                               echo   '<a href="#" title="Add to wishlist" class="proid"  data-target="#smyModal" data-toggle="modal" data-id="'.  $result->PROID.'">Add to wishlist</a>
-             ';
-                                            } 
-                                  
-
-
-
-                                          ?>
+                                       
 
 
 
@@ -121,10 +105,13 @@ check_message();
       </div>
       <div class="row">
      <form action="index.php?q=orderdetails" method="post">
-   <a href="index.php?q=product" class="btn btn-default check_out pull-left ">
-   <i class="fa fa-arrow-left fa-fw"></i>
-   Add New Order
-   </a>
+      <div class="hero-btn">
+      <a href="index.php?q=product" class=" check_out pull-left " style="margin-left: 20px;">
+  
+  Add New Order
+  </a>
+      </div>
+   
 
      <?php    
   
@@ -133,10 +120,10 @@ check_message();
   
                   if (isset($_SESSION['CUSID'])){  
                
-                    echo '<button type="submit"  name="proceed" id="proceed" class="btn btn-default check_out btn-pup pull-right">
+                    echo '<button type="submit"  name="proceed" id="proceed" class="hbtn1 btn-default check_out btn-pup pull-right">
                             Proceed And Checkout
-                            <i class="fa  fa-arrow-right fa-fw"></i>
-                            </button>';
+                            
+                            </button> ';
                  
                    }else{
                      echo   '<a data-target="#smyModal" data-toggle="modal" class="btn btn-default check_out signup pull-right" href="">
